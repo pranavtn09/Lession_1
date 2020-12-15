@@ -4,7 +4,7 @@ public class Calculator {
 	void options() {
 		int a;
 		int FirstNum ,SecondNum;
-		String A;
+		String A="y";
 		do {
 		System.out.println("\n1)Addition \n2)Subtraction  \n3)Multiplication \n4)Division \n5)Exit");
 		System.out.println("\nEnter an Option:");
@@ -14,7 +14,7 @@ public class Calculator {
 		}
 		if(a!=1 && a!=2 && a!=3 && a!=4 && a!=5 ) {
 			System.out.println("Invalid Option!!");
-			options();
+			continue;
 		}
 		System.out.println("First Number:");
 		FirstNum=Read();
